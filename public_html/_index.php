@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Movie Taker</title>
+    <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" />
     <meta charset="UTF-8" />
@@ -32,10 +32,41 @@
         </div>
     </div>
 
+
     <div id="container"></div>
+
+                <!-- <?php
+                    $doc = new DOMDocument();
+                    $doc->loadHTMLFile("TZ.html");
+                   // echo $doc->saveHTML();
+                    $myDOMNodeList_h1 = $doc->getElementsByTagName('h1');
+                    $myDOMNodeList_p = $doc->getElementsByTagName('p');
+
+                    $arrForJS = 'let films = [';
+     
+                   for($i=0; $i < $myDOMNodeList_h1->length; $i++){
+                        if($i < 10)
+                          $ii = '00'. $i. '.jpg';
+                        if($i > 9 && $i < 100)
+                          $ii='0'. $i. '.jpg';
+                        if($i > 99)    
+                          $ii= $i. '.jpg';
+                        
+                
+                    //    echo '{name: "'. $myDOMNodeList_h1[$i]->nodeValue. '"';
+                    //    echo ', rate: '. $myDOMNodeList_p[$i]->nodeValue;
+                    //    echo ', image: "'. $ii.'"},<br>';
+                        //$arrForJS =  $arrForJS.
+                    }
+                    $arrForJS = $arrForJS. ']';
+
+                ?> -->
+
+<!-- <div class="debug"><?php  echo ' Hi '. `<img src="img/168.jpg" alt="fff">`?></div> -->
 
     <script type="text/javascript" src="movies.js"> </script>
     <script type="text/javascript" src="film.js"> </script>
+    <!-- <img src="img/168.jpg"> -->
 
 </body>
 
